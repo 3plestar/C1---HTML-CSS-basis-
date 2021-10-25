@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .flex-container {
+      width: 55rem;
+      border: solid 3px black;
+      display: flex;
+      flex-wrap:wrap-reverse;
+      height: 50vh;
+      justify-content:space-between;
+      
+    }
+    .flex_child {
+        align-self: flex-end;
+      text-align: center;
+      width: 9rem;
+      border: solid 3px green;
+      height: max-content;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .red {
+      background-color: red;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .purple {
+      background-color: purple;
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="flex_child yellow">1</div>
+      <div class="flex_child red">2</div>
+      <div class="flex_child blue">3</div>
+      <div class="flex_child purple">4</div>
+      <div class="flex_child yellow">5</div>
+      <div class="flex_child red">6</div>
+      <div class="flex_child blue">7</div>
+      <div class="flex_child purple">8</div>
+      <div class="flex_child yellow">9</div>
+      <div class="flex_child red">10</div>
+    </div>
+  </body>
+</html>

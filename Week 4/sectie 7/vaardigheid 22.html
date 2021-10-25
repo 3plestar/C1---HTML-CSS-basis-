@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .flex-container {
+      width: 20vw;
+      border: solid 3px black;
+      display: flex;
+      flex-wrap: wrap;
+      height: 50vh;
+      justify-content: stretch;
+    }
+    .flex_child {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+
+      border: solid 2px green;
+    }
+
+    .flex_child:nth-child(1) {
+      background-color: yellow;
+    }
+    .flex_child:nth-child(2) {
+      background-color: red;
+    }
+    .flex_child:nth-child(3) {
+      background-color: blue;
+      flex-grow: 1;
+    }
+    .flex_child:nth-child(4) {
+      background-color: purple;
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="flex_child">1</div>
+      <div class="flex_child">2</div>
+      <div class="flex_child">3</div>
+      <div class="flex_child">4</div>
+    </div>
+  </body>
+</html>
