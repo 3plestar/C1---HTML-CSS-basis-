@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      background-color: black;
+    }
+    .bg {
+      background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.4)),
+        url(img/call.jpeg);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      clip-path: polygon(
+        100% 100%, 100% 0%, 0% 0%, 0% 100%,
+        100% 100%,
+        55% 40%, 44% 40%, 44% 34%, 55% 34%,
+        55% 40%
+      );
+    }
+  </style>
+  <div class="bg"></div>
+</html>
