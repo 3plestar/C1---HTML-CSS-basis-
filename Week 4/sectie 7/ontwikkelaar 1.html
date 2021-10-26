@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <style>
+      body{
+          background-color: papayawhip;
+      }
+      div{
+          font-family: Courier;
+      }
+      .justForThatHeight{
+          
+          height: 97vh;
+          display: flex;
+          flex-direction: column;
+
+      }
+    .flexy {
+      text-align: center;
+      font-size: 12vh;
+    }
+    .containercontainer {
+      border: dashed black 1vmin;
+      background-color: pink;
+      display: flex;
+      flex-grow: 1;
+    }
+    .container {
+        margin: 0.5vmin;
+        border: solid black 1vmin;
+      
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+      
+    }
+    .container>div{
+        font-size: 2vmin;
+        height: 20px;
+        display: flex;
+     justify-content: center;
+      text-align: center;
+      flex-direction: column;
+        margin: 2px;
+        border: dotted cornflowerblue 0.5vmin;
+        flex-grow: 1;
+    }
+    
+    .pinkBG{
+        background-color: palevioletred;
+        display: block;
+    }
+  </style>
+
+  <body>
+      <div class="justForThatHeight">
+        <div class="flexy">Flexbox</div><br>
+        <div class="containercontainer">
+          <div class="container">
+              <div>
+                  Container Properties
+              </div>
+              <div>
+                <div class="pinkBG">//Creates a flexbox</div>
+                <div>display: flex;</div>
+              </div>
+              <div>
+                <div class="pinkBG">//Direction, establishes main-axis</div>
+                <div>flex-direction: row || row-reverse || column || column-reverse</div>
+              </div>
+              <div>
+                <div class="pinkBG">//To wrap or not to wrap</div>
+                <div>flex-wrap: nowrap || wrap || wrap-reverse</div>
+              </div>
+              <div>
+                <div class="pinkBG">//Shorthanded (direction wrap)</div>
+                <div>flex-flow: flex-direction flex-wrap</div>
+              </div>
+              <div>
+                <div class="pinkBG">//Alignment main-axis</div>
+                <div>justify-content: flex-start || flex-end || center || space-between || space-around || space-evenly</div>
+              </div>
+              <div>
+                <div class="pinkBG">//Alignment cross-axis</div>
+                <div>align-items: stretch || flex-start || flex-end || center || baseline</div>
+              </div>
+              <div>
+                <div class="pinkBG">//Alignment lines within the container</div>
+                <div>align-content: normal || flex-start || flex-end || center || space-between || space-around || space-evenly || stretch</div>
+              </div>
+              <div>
+                
+              </div>
+          </div>
+          <div class="container">
+            <div>
+                Item Properties
+            </div>
+            <div>
+                <div class="pinkBG">//Order of the (flex) html-elements</div>
+                <div>order: integer (default: 0)</div>
+            </div>
+            <div>
+                <div class="pinkBG">//Ability to grow if necessary</div>
+                <div>flex-grow: integer (default: 0)</div>
+            </div>
+            <div>
+                <div class="pinkBG">//Ability to shrink if necessary</div>
+                <div>flex-shrink: positive integer (default: 1)</div>
+            </div>
+            <div>
+                <div class="pinkBG">//Defines default size of the item</div>
+                <div>flex-basis: length || keyword (default: auto)</div>
+            </div>
+            <div>
+                <div class="pinkBG">//Shorthanded (grow shrink basis)</div>
+                <div>flex: flex-grow flex-shrink flex-basis (default: 0 1 auto)</div>
+            </div>
+            <div>
+                <div class="pinkBG">//Override default alignment from align-items</div>
+                <div>align-self: auto || flex-start || flex-end || center || baseline || stretch</div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    
+  </body>
+</html>
