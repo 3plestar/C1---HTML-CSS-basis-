@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .containinor{
+            display: flex;
+            background-color: mediumaquamarine;
+            border: 4px solid khaki;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        button{
+            background-color: mediumaquamarine;
+            border: 2px solid black;
+            flex-grow: 1;
+            margin: 3px;
+            
+            
+        }
+        button:hover{
+            background-color: rgb(102, 193, 205);
+            
+        }
+        .home{
+            width: 38vw;
+            transition-property: width;
+            transition-duration: 0.2s;
+        }
+        @media screen and (max-width:1170px){
+            .home{
+                width: 8vw;
+            }
+        }
+        @media screen and (max-width:850px){
+            .containinor{
+            flex-wrap: wrap;
+            }
+            button{
+                width: 40vw;
+            }
+            .home{
+                transition-property:none;
+                width: 40vw;
+            }
+        }
+        @media screen and (max-width:500px){
+            .containinor{
+            flex-wrap: wrap;
+            }
+            button{
+                width: 50vw;
+            }
+            .home{
+                width: 50vw;
+            }
+        }
+    </style>
+  <div class="containinor">
+    <button type="button" onclick="alert('I dont know where you live')" class="home">Home</button>
+    <button type="button" onclick="alert('I dont know who you are')">Profile</button>
+    <button type="button" onclick="alert('I dont know...')">Search</button>
+    <button type="button" onclick="alert('I dont...')">Logout</button>
+  </div>
+</html>

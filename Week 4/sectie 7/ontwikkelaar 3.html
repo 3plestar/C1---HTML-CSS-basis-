@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <style>
+      
+    .containeverything {
+      display: flex;
+      flex-direction: column;
+      background-color: grey;
+      height: max-content;
+    }
+    .containinor {
+      display: flex;
+      background-color: plum;
+      border: 1px solid black;
+      justify-content: stretch;
+      flex-wrap: nowrap;
+    }
+    .containinor > div {
+      flex-grow: 1;
+      text-align: center;
+    }
+    button {
+      background-color: plum;
+      border: 0.5px solid black;
+      flex-grow: 1;
+      font-size: 120%;
+    }
+    button:hover {
+      background-color: rgb(102, 193, 205);
+    }
+    .home {
+      width: 38vw;
+    }
+    .pics {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      padding: 10px;
+      margin-bottom: 3vh;
+    }
+    .picture {
+      margin: 10px;
+      flex-grow: 1;
+      height: 17rem;
+      width: 25vw;
+      background-image: url("img/pika.jpg");
+      background-repeat: no-repeat;
+
+      background-size: cover;
+      flex-grow: 1;
+    }
+    @media screen and (max-width: 950px) {
+      .containinor {
+        flex-wrap: wrap;
+      }
+      button {
+        width: 40vw;
+      }
+      .home {
+        transition-property: none;
+        width: 40vw;
+      }
+      .containinor > div {
+        width: 30vw;
+      }
+      .picture{
+        width: 40vw; 
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .containinor {
+        flex-wrap: wrap;
+      }
+      button {
+        width: 50vw;
+      }
+      .home {
+        width: 50vw;
+      }
+      .containinor > div {
+        width: 100vw;
+      }
+      .picture{
+        width: 60vw; 
+      }
+    }
+  </style>
+  <div class="containeverything">
+    <div class="containinor">
+      <button
+        type="button"
+        onclick="alert('I dont know where they live')"
+        class="home"
+      >
+        Home
+      </button>
+      <button type="button" onclick="alert('I dont know what they do')">
+        Onze diensten
+      </button>
+      <button type="button" onclick="alert('I dont know who they are')">
+        Onze teams
+      </button>
+      <button type="button" onclick="alert('Help me...')">Contact</button>
+    </div>
+    <div class="pics">
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      <div class="picture"></div>
+      
+    </div>
+    <div class="containinor">
+      <div>ROC-DEV</div>
+      <div>0620002000</div>
+      <div>roc-dev@rocdev.com</div>
+      <div>SVF 1, Almere</div>
+      <div>KvK 6260090</div>
+      <div>B019022323214</div>
+    </div>
+  </div>
+</html>
