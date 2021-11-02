@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: ivory;
+    }
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .deel {
+      display: table;
+      border-collapse: collapse;
+      width: 600px;
+      background-color: rgb(241, 241, 229);
+    }
+
+    .deel th,
+    .deel td {
+      border: 1px solid black;
+      text-align: left;
+      padding: 2px;
+      height: 20px;
+    }
+    .klein {
+      font-size: 80%;
+    }
+    .toprow th,
+    .toprow td {
+      border: 2px solid black;
+    }
+    .dicearea {
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+      background-color: rgb(52, 128, 52);
+
+      padding: 30px;
+      border: darksalmon solid 8px;
+    }
+    .diebox {
+      height: 200px;
+      width: 200px;
+
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .die {
+      border-radius: 9px;
+      height: 120px;
+      width: 120px;
+      background-color: whitesmoke;
+    }
+    .dice4 {
+      transform: translateX(50%);
+    }
+    .dice5 {
+      transform: translateX(-50%);
+    }
+  </style>
+
+  <div class="container">
+    <div>
+      <table class="deel deel1">
+        <colgroup>
+          <col span="1" style="width: 36%" />
+          <col span="1" style="width: 23%" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+        </colgroup>
+        <tr class="toprow">
+          <th>DEEL 1</th>
+          <th>Puntentelling</th>
+          <th>Speler 1</th>
+          <th>Speler 2</th>
+          <th>Speler 3</th>
+          <th>Speler 4</th>
+        </tr>
+        <tr>
+          <td>ENEN</td>
+          <td>Tel alle enen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>TWEEËN</td>
+          <td>Tel alle tweeën</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DRIEËN</td>
+          <td>Tel alle drieën</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>VIEREN</td>
+          <td>Tel alle vieren</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>VIJVEN</td>
+          <td>Tel alle vijven</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ZESSEN</td>
+          <td>Tel alle zessen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">TOTAAL AANTAL PUNTEN</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div>EXTRA BONUS</div>
+            <div class="klein">Bij een puntentotaal van minstens 63</div>
+          </td>
+          <td>35 punten</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>TOTAAL</div>
+            <div class="klein">Van deel 1</div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <table class="deel deel2">
+        <colgroup>
+          <col span="1" style="width: 36%" />
+          <col span="1" style="width: 23%" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+          <col span="1" style="width: 1fr" />
+        </colgroup>
+        <tr>
+          <th
+            colspan="6"
+            style="border-top: initial; border-bottom: initial"
+          ></th>
+        </tr>
+        <tr>
+          <th colspan="6" style="border-top: initial">DEEL 2</th>
+        </tr>
+        <tr>
+          <td>THREE OF A KIND</td>
+          <td>Totaal v.d. 5 stenen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>FOUR OF A KIND</td>
+          <td>Totaal v.d. 5 stenen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>FULL HOUSE</td>
+          <td>25 punten</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>KlEINE STRAAT</td>
+          <td>30 punten</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>GROTE STRAAT</td>
+          <td>40 punten</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>JACHTZEE</td>
+          <td>50 punten</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>CHANCE</td>
+          <td>Totaal v.d. 5 stenen</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>TOTAAL</div>
+            <div class="klein">Van deel 2</div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div>TOTAAL</div>
+            <div class="klein">Van deel 1</div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">SUBTOTAAL</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dicearea">
+      <div class="diebox"><div class="die dice1"></div></div>
+      <div class="diebox"><div class="die dice2"></div></div>
+      <div class="diebox"><div class="die dice3"></div></div>
+
+      <div class="diebox"><div class="die dice4"></div></div>
+      <div class="diebox"><div class="die dice5"></div></div>
+    </div>
+  </div>
+</html>
