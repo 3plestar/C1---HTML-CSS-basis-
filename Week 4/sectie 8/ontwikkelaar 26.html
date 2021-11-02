@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: salmon;
+    }
+    .container {
+      display: grid;
+      width: 800px;
+      height: 300px;
+      grid-template-columns: repeat(5, 1fr);
+
+      border: 2px solid black;
+      gap: 20px;
+    }
+    .container > div {
+      font-size: 50px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .a0 {
+      background-color: pink;
+      grid-column: span 2;
+    }
+    .b1 {
+      background-color: red;
+      grid-row: span 2;
+    }
+    .c2 {
+      background-color: blue;
+      grid-column: span 2;
+    }
+    .d3 {
+      background-color: purple;
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+    .e4 {
+      background-color: green;
+      grid-column: 4/span 2;
+    }
+    .f5 {
+      background-color: lightskyblue;
+    }
+    .g6 {
+      background-color: yellow;
+      grid-column: span 2;
+    }
+    .h7 {
+      background-color: pink;
+      grid-column: span 3;
+    }
+  </style>
+  <div class="container">
+    <div class="a0">0</div>
+    <div class="b1">1</div>
+    <div class="c2">2</div>
+    <div class="d3">3</div>
+    <div class="e4">4</div>
+    <div class="f5">5</div>
+    <div class="g6">6</div>
+    <div class="h7">7</div>
+    
+  </div>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: salmon;
+    }
+    .container {
+      display: grid;
+      width: 600px; 
+      height: 600px;
+      grid-template-columns: repeat(4, 1fr);
+      
+      border: 2px solid black;
+      row-gap: 40px;
+      column-gap: 40px;
+    }
+    .container > div {
+    
+      font-size: 50px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .a {
+      background-color: yellow;
+      grid-row-start: 2;
+      grid-row-end: 5;
+      
+    }
+    .b {
+      background-color: pink;
+    }
+    .c {
+      background-color: red;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .d {
+      background-color: blue;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .e {
+      background-color: purple;
+      
+      grid-column-start: 1;
+      grid-column-end: span 2;
+    }
+    .f {
+      background-color: green;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+    .g{
+      background-color: lightskyblue;
+      
+      grid-column-start: 3;
+      grid-column-end: 5;
+    }
+  </style>
+  <div class="container">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+    <div class="f">F</div>
+    <div class="g">G</div>
+  </div>
+</html>

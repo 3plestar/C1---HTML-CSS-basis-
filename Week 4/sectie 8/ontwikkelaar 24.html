@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: salmon;
+    }
+    .container {
+      display: grid;
+      width: 1000px;
+      height: 650px;
+      grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr 1fr repeat(9, 2fr);
+      border: 2px solid black;
+      gap: 5px;
+    }
+    .container > div {
+      font-size: 20px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .a0 {
+      background-color: pink;
+      grid-column: span 2;
+    }
+    .b1 {
+      background-color: red;
+      grid-row: span 2;
+    }
+    .c2 {
+      background-color: blue;
+      grid-column: span 2;
+    }
+    .d3 {
+      background-color: purple;
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+    .e4 {
+      background-color: green;
+      grid-column: 4/span 2;
+    }
+    .f5 {
+      background-color: lightskyblue;
+    }
+    .g6 {
+      background-color: yellow;
+      grid-column: span 2;
+    }
+    .h7 {
+      background-color: pink;
+      grid-column: span 3;
+    }
+    .i8 {
+      background-color: red;
+      grid-row: span 2;
+    }
+    .j9 {
+      background-color: blue;
+    }
+    .k10 {
+        background-color: purple;
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+    .l11{
+        background-color: green;
+    }
+    .m12{
+        background-color: lightskyblue;
+    }
+    .n13{
+        background-color: yellow;
+    }
+    
+  </style>
+  <div class="container">
+    <div class="a0">0</div>
+    <div class="b1">1</div>
+    <div class="c2">2</div>
+    <div class="d3">3</div>
+    <div class="e4">4</div>
+    <div class="f5">5</div>
+    <div class="g6">6</div>
+    <div class="h7">7</div>
+    <div class="i8">8</div>
+    <div class="j9">9</div>
+    <div class="k10">10</div>
+    <div class="l11">11</div>
+    <div class="m12">12</div>
+    <div class="n13">13</div>
+    <div class="a0">14</div>
+    <div class="b1">15</div>
+    <div class="c2">16</div>
+    <div class="d3">17</div>
+    <div class="e4">18</div>
+    <div class="f5">19</div>
+    <div class="g6">20</div>
+    <div class="h7">21</div>
+  </div>
+</html>

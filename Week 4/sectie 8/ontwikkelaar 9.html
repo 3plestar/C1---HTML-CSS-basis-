@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: salmon;
+    }
+    .container {
+      display: grid;
+      width: 600px; 
+      height: 400px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      border: 2px solid black;
+      row-gap: 20px;
+    }
+    .container > div {
+      font-size: 50px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .a {
+      background-color: yellow;
+    }
+    .b {
+      background-color: pink;
+    }
+    .c {
+      background-color: red;
+    }
+    .d {
+      background-color: blue;
+    }
+    .e {
+      background-color: purple;
+    }
+    .f {
+      background-color: green;
+    }
+    .g{
+      background-color: lightskyblue;
+    }
+  </style>
+  <div class="container">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+    <div class="f">F</div>
+    <div class="g">G</div>
+  </div>
+</html>
