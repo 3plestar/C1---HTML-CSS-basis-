@@ -1,6 +1,9 @@
 body {
   margin: 0;
+  
 }
+
+/* header */
 .topbar{
     width: 100%;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
@@ -43,10 +46,12 @@ body {
   cursor: pointer;
   background-size: 50px 50px;
   background-position: center;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   
 }
 
 .active::before {
     background-image: linear-gradient(rgb(147, 187, 224), rgb(147, 187, 224));
 }
+
+/* footer */
