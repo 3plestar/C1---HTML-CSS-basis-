@@ -1,6 +1,15 @@
 .main{
- 
+ display: flex;
   
   padding: 30px;
- text-align: center;
+ flex-wrap: wrap;
+}
+.title{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.img{
+  margin: 20px;
+  height: 560px;
 }
