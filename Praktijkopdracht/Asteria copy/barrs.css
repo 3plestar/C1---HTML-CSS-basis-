@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  
+}
+
+/* header */
+.topbar{
+  
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+}
+.topnav {
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.toplink {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+  padding: 20px 30px;
+  position: relative;
+  transition: color 0s 0.37s;
+}
+
+.toplink::before {
+  background-size: 300px 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(white, white);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 300px 0px;
+  transition: all 0.3s 0.3s, transform 0.3s ease;
+}
+
+.toplink:hover{
+  transition: color 0s 0.05s;
+  color: rgb(19, 19, 19);
+}
+
+.toplink:hover::before {
+  transition: all 0.3s, transform 0.3s ease 0.3s;
+  cursor: pointer;
+  background-size: 50px 50px;
+  background-position: center;
+  transform: rotate(-45deg);
+  
+}
+
+.active::before {
+    
+    background-size: 300px 3px;
+}
+
+/* footer */

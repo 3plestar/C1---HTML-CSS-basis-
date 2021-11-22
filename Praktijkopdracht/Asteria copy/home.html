@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Asteria Home</title>
+    <title>Brew</title>
     <link href="barrs.css" rel="stylesheet" />
     <link href="homeBody.css" rel="stylesheet" />
     <link href="modal.css" rel="stylesheet" />
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div id="container">
@@ -25,62 +26,61 @@
         </div>
 
         <a href="https://docs.google.com/document/d/1pPht4zaXuygHzkU4NiQifa7SPUdcaPPWqLUZbk876zY/edit#heading=h.qkour0dyh9qr" target="modframe">
-          <img src="img/asteria.jpg" class="img link"/>
+          <img src="img/asteria.jpg" class="img" data-toggle="modal" data-target="#myModal"/>
         </a>
         <a href="https://homebrewery.naturalcrit.com/share/SJq2uGxk9" target="modframe">
-          <img src="img/sakon.png" class="img link"/>
+          <img src="img/sakon.png" class="img" data-toggle="modal" data-target="#myModal"/>
         </a>
         <a href="https://docs.google.com/document/d/1qHF7UxvB09ZLZ2pFhqn8iLz7dA7SG3rcCCVav26ANHQ/edit?usp=sharing" target="modframe">
-          <img src="img/Oche.png" class="img link"/>
+          <img src="img/Oche.png" class="img" data-toggle="modal" data-target="#myModal"/>
         </a>
         <a href="https://docs.google.com/document/d/10lptmsdpCM0FM6RRT6rztWdeytS9g0BLoX8wJa4jSVw/edit?usp=sharing" target="modframe">
-          <img src="img/pokemon.png" class="imgsmall link" />
+          <img src="img/pokemon.png" class="imgsmall" data-toggle="modal" data-target="#myModal"/>
         </a>
         <a href="https://docs.google.com/document/d/1n1qE2AAGx9OhitxXHVmSMf73FTIYV68bieRx7AufD2c/edit?usp=sharing" target="modframe">
-          <button class="link">
+          <button data-toggle="modal" data-target="#myModal">
             Twig’s Travel Guide To Fendal Harbor
           </button>
         </a>
         <a href="https://docs.google.com/document/d/1J1fHxwKcfNR9b8qB6k0BkNmAQ3mspSbZzGtbhBjN6AE/edit?usp=sharing" target="modframe">
-          <button class="link">
+          <button data-toggle="modal" data-target="#myModal">
             Random stuff because Rick and Bertus wanted it in 1 file
           </button>
         </a>
 
         <a href="https://homebrewery.naturalcrit.com/share/LZL9PNiI" target="modframe">
-          <button class="link">
+          <button data-toggle="modal" data-target="#myModal">
             New Subclasses
           </button>
         </a>
 
         <a href="https://homebrewery.naturalcrit.com/share/AdsXdB__R8rl" target="modframe">
-          <button class="link">
+          <button data-toggle="modal" data-target="#myModal">
             Additional Rules Return of the One
           </button>
         </a>
         <a href="https://homebrewery.naturalcrit.com/share/8wHRCMGPc" target="modframe" >
-          <button class="link">
+          <button data-toggle="modal" data-target="#myModal">
             Sakon's Elemental Spells
           </button>
         </a>
         <a href="https://homebrewery.naturalcrit.com/share/8wHRCMGPc" target="modframe">
-          <button class="link">
+          <button data-toggle="modal" data-target="#myModal">
             Subclass Fixes
           </button>
         </a>
       </div>
 
       <!-- modal -->
-      <div class="modal" id="myModal">
+      <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">
-            <button class="close">&times;</button>
+            <button class="close" data-dismiss="modal" onclick="modframe.location.href='about: blank';">&times;</button>
 
             <iframe name="modframe" height="600vh" width="96%"></iframe>
           </div>
         </div>
       </div>
-      <script src="modal.js"></script>
 
       <footer class="bottombar">
         <div>yo</div>
