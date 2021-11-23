@@ -1,20 +1,67 @@
-.main{
- display: flex;
-  justify-content: center;
-  padding: 30px;
- flex-wrap: wrap;
+
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: min-content;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 30px;
+  column-gap: 30px;
 }
-.title{
+
+.title {
   display: block;
-  width: 100%;
-  text-align: center;
-}
-.img{
-  margin: 20px;
-  height: 560px;
-}
-.imgsmall{
-  margin: 20px;
   
-  height: 300px;
+  font-size: larger;
+  text-align: center;
+  grid-column: span 3;
 }
+
+/* images */
+.img {
+  height: 560px;
+  width: 400px;
+  transition: all 0.5s;
+}
+
+.imgsmall {
+  width: 400px;
+  transition: all 0.5s;
+}
+
+/* hovering over images */
+.img:hover {
+  transform: scale(1.03);
+}
+.imgsmall:hover {
+  transform: scale(1.03);
+}
+
+/* buttons */
+.buttoncontainer{
+  display: grid;
+  grid-column: span 2;
+  width: 100%;
+}
+.buttonGrid {
+  width: 100%;
+}
+
+.button {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #ee0c09;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 100%;
+  border: none;
+  clip-path: polygon(calc(0% + 20px) 100%, 0% 50%,calc(0% + 20px) 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%);
+  transition: all 0.5s;
+}
+
+.button:hover{
+  background-color: #ee0d09b7;
+}
+
