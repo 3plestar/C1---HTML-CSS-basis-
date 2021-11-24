@@ -57,7 +57,7 @@
   height: 30px;
   width: 100%;
   border: none;
-  clip-path: polygon(calc(0% + 20px) 100%, 0% 50%,calc(0% + 20px) 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%);
+  clip-path: polygon(calc(0% + 18px) 100%, 0% 50%,calc(0% + 18px) 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%);
   transition: all 0.5s;
 }
 
@@ -65,3 +65,18 @@
   background-color: #ee0d09b7;
 }
 
+/* footer */
+.bottombar{
+  display: flex;
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  font-size: smaller;
+}
+
+.bottomtext{
+  margin-top: 10px;
+  display: block;
+  
+  color: white;
+  padding: 20px 30px;
+}
