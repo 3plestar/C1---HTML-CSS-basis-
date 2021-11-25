@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Asteria Contact</title>
     <link href="barrs.css" rel="stylesheet" />
+    <link href="barssphone.css" rel="stylesheet" />
     <link href="otherbody.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id="container">
@@ -19,6 +21,22 @@
 
           <a class="toplink active" href="contact.html">Contact</a>
         </nav>
+
+        <!-- dropdown menu -->
+        <div class="topnavtwo">
+          <a href="javascript:void(0);" id="dropdownBtn">
+            <i class="fa fa-bars"></i>
+          </a>
+          <nav id="dropdown" style="display: none;">
+            <a class="ptoplink pactive" href="home.html">Home</a>
+  
+            <a class="ptoplink" href="about.html">About</a>
+  
+            <a class="ptoplink" href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <script src="dropdown.js"></script>
+        
       </header>
 
       <!-- main body -->

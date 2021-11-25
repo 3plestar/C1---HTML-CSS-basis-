@@ -4,16 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Asteria Home</title>
     <link href="barrs.css" rel="stylesheet" />
+    <link href="barssphone.css" rel="stylesheet" />
     <link href="homeBody.css" rel="stylesheet" />
     <link href="modal.css" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id="container">
       <header class="topbar">
         <a href="home.html">
           <img src="img/logo.png" alt="Asteria" class="logo">
-          </a>
+        </a>
         <nav class="topnav">
           <a class="toplink active" href="home.html">Home</a>
 
@@ -21,6 +22,22 @@
 
           <a class="toplink" href="contact.html">Contact</a>
         </nav>
+
+        <!-- dropdown menu -->
+        <div class="topnavtwo">
+          <a href="javascript:void(0);" id="dropdownBtn">
+            <i class="fa fa-bars"></i>
+          </a>
+          <nav id="dropdown" style="display: none;">
+            <a class="ptoplink pactive" href="home.html">Home</a>
+  
+            <a class="ptoplink" href="about.html">About</a>
+  
+            <a class="ptoplink" href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <script src="dropdown.js"></script>
+        
       </header>
 
       <!-- main body -->
@@ -44,7 +61,7 @@
         <div class="buttoncontainer">
           <a href="https://docs.google.com/document/d/1n1qE2AAGx9OhitxXHVmSMf73FTIYV68bieRx7AufD2c/edit?usp=sharing" target="modframe" class="buttonGrid">
             <button class="link button">
-              Twig’s Travel Guide To Fendal Harbor
+              Twig&apos;s Travel Guide To Fendal Harbor
             </button>
           </a>
           <a href="https://docs.google.com/document/d/1J1fHxwKcfNR9b8qB6k0BkNmAQ3mspSbZzGtbhBjN6AE/edit?usp=sharing" target="modframe" class="buttonGrid">
@@ -72,8 +89,8 @@
             <button class="link button">
               Subclass Fixes
             </button>
+          </a>
         </div>
-        </a>
       </div>
 
       <!-- modal -->

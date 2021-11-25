@@ -20,3 +20,4 @@ window.onclick = function(event) {
     modframe.location.href='about: blank';
   }
 }
+

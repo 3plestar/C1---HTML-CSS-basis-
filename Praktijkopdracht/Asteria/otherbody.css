@@ -1,19 +1,18 @@
-#container{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .main {
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   justify-content: center;
-   flex-grow: 1;
-  }
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-grow: 1;
+}
 
-  .maintext{
-      width: 1260px;
-  }
-  
+.maintext {
+  width: 1260px;
+}

@@ -3,12 +3,15 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: -moz-min-content;
+  width: -webkit-min-content;
   width: min-content;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   row-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .title {
@@ -57,7 +60,8 @@
   height: 30px;
   width: 100%;
   border: none;
-  clip-path: polygon(calc(0% + 18px) 100%, 0% 50%,calc(0% + 18px) 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%);
+  -webkit-clip-path: polygon(calc(0% + 18px) 100%, 0% 50%,calc(0% + 18px) 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%);
+          clip-path: polygon(calc(0% + 18px) 100%, 0% 50%,calc(0% + 18px) 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%);
   transition: all 0.5s;
 }
 
@@ -71,6 +75,7 @@
   width: 100%;
   background-color: rgb(19, 19, 19);
   font-size: smaller;
+  border: none;
 }
 
 .bottomtext{
@@ -79,4 +84,48 @@
   
   color: white;
   padding: 20px 30px;
+}
+
+/* body for phone */
+@media only screen and (max-width: 768px) {
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.title {
+  
+  font-size: larger;
+  text-align: center;
+}
+
+/* images */
+.img {
+  height: 100%;
+  width: 80vw;
+  
+}
+
+.imgsmall {
+  width: 80vw;
+  
+}
+
+.buttoncontainer {
+  display: block;
+  width: 80vw;
+}
+.buttoncontainer{
+  margin-bottom: 20px;
+}
+.button{
+  margin-bottom: 20px;
+}
+
+/* footer */
+.bottombar{
+  width: 100%;
+}
 }

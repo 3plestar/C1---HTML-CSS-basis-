@@ -1,18 +1,18 @@
 body {
   margin: 0;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
 }
 
 /* header */
-.topbar{
-    width: 100%;
-    background-color: rgb(19, 19, 19);
-    display: flex;
-    font-family:Arial, Helvetica, sans-serif;
-    
+.topbar {
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
+.logo {
   margin: 7px;
   margin-left: 10px;
   height: 38px;
@@ -25,6 +25,8 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+
+
 
 .toplink {
   width: 70px;
@@ -54,7 +56,7 @@ body {
   transition: all 0.3s 0.3s, transform 0.3s ease;
 }
 
-.toplink:hover{
+.toplink:hover {
   transition: color 0s 0.05s;
   color: rgb(19, 19, 19);
 }
@@ -65,26 +67,24 @@ body {
   background-size: 55px 55px;
   background-position: center;
   transform: rotate(-45deg);
-  
 }
 
 .active::before {
-    
-    background-size: 300px 3px;
+  background-size: 300px 3px;
 }
 
 /* footer */
-.bottombar{
+.bottombar {
   display: flex;
   width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0.089);
+  border-top: 2px solid rgba(0, 0, 0, 0.089);
   font-size: smaller;
-
 }
 
-.bottomtext{
+.bottomtext {
   margin-top: 10px;
   display: block;
-  
   padding: 20px 30px;
 }
+
+
