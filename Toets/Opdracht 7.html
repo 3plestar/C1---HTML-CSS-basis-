@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+    body > div {
+      height: 30px;
+
+      text-align: center;
+    }
+    .red {
+      background-color: red;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    @media only screen and (max-width: 1000px) {
+      body {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media only screen and (max-width: 871px) {
+      body > div {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media only screen and (max-width: 520px) {
+      body > div {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <div class="red">Home</div>
+    <div class="blue">Kan deze niet lezen</div>
+    <div class="green">Producten</div>
+    <div class="yellow">Ons team</div>
+    <div class="red">Onze werkwijze</div>
+    <div class="yellow">Contact</div>
+  </body>
+</html>

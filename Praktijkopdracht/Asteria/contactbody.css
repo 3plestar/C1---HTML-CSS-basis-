@@ -1,0 +1,42 @@
+
+.btn{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #ee0c09;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 600px;
+    border: none;
+    -webkit-clip-path: polygon(calc(0% + 18px) 100%, 0% 50%,calc(0% + 18px) 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%);
+            clip-path: polygon(calc(0% + 18px) 100%, 0% 50%,calc(0% + 18px) 0%, calc(100% - 18px) 0%, 100% 50%, calc(100% - 18px) 100%);
+    transition: color 0.5s;
+}
+.btn:hover{
+    background-color: #ee0d09b7;
+  }
+
+.namearea{
+    width: 600px;
+}
+
+.mailarea{
+    resize: none;
+    width: 600px;
+    height: 320px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mailform{
+        width: 80vw;
+    }
+    .namearea{
+        width: 80vw;
+    }
+    .mailarea{
+        width: 80vw;
+        height: 280px;
+    }
+    .btn{
+        width: 80vw;
+    }
+}

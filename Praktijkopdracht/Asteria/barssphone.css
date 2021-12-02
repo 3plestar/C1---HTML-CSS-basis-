@@ -1,7 +1,4 @@
 /* bars on phone */
-.topnavtwo {
-    display: none;
-  }
   .ptoplink {
     background-color: rgb(56, 56, 56);
     color: white;
@@ -20,8 +17,8 @@
   .topnavtwo {
     width: 100%;
     overflow: hidden;
-
-    display: flex;
+    display: none;
+    
     flex-direction: column;
   }
   .ptoplink:hover {
@@ -33,7 +30,28 @@
     .topnav {
       display: none;
     }
+    .topnavtwo{
+      display: flex;
+    }
     
+    
+    .logo{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    
+  }
+
+
+  /* tablet */
+  @media only screen and (max-width: 1280px) {
+    .topnav {
+      display: none;
+    }
+    .topnavtwo{
+      display: flex;
+    }
     
     
     .logo{
